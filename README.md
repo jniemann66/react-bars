@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jniemann66/react-bars.svg?branch=master)](https://travis-ci.org/jniemann66/react-bars)
+
 # react-bars
 React Component to draw simple "skill bar" - style bar-graphs
 
