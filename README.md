@@ -29,8 +29,7 @@ Please refer to the API documentation for details:
 
 	import React, { Component } from 'react';
 	import ReactDOM from 'react-dom';	
-	import Bar from '../src/bar.js';
-	import Bars from '../src/bars.js';
+	import Bars from 'react-bars';
 
 	import './App.css';
 
