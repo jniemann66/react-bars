@@ -79,7 +79,15 @@ testing: **npm test**
 
 ### to-do: 
 
-* [ ] Implement optional display of numerical value
+* [ ] optional display of numerical value
+
+* [ ] event callbacks (click, hover etc)
+
+* [ ] change orientation (vertical ? etc)
+
+* [ ] document / define styling
+
+* [ ] hover colors etc
 
 
 
