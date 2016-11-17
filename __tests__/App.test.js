@@ -4,6 +4,13 @@ import Bar from '../src/bar';
 import Bars from '../src/bars';
 import sinon from 'sinon';
 
+// Turn console.error warnings into actual errors:
+beforeAll(() => {
+  console.error = (error) => {
+    throw new Error(error);
+  };
+});
+
 describe('Bar component', () => {
 	it('should be able to tolerate any props as input', () => {
 
@@ -25,17 +32,16 @@ describe('Bar component', () => {
 });
 
 describe('Bars component', () => {
-	it('with NO DATA, it should return nothing (but not crash)', () => {
+	it('with NO data, a prop warning should be issued (but component should not crash)', () => {
 
-		// no Props
-		const wrapper = mount(
-			<Bars/>
-		);
-
-		let instance = wrapper.instance();
+		// no data
 	
-		wrapper.unmount();
-
+		expect(()=> {
+			const wrapper = mount(
+				<Bars/>
+			);
+		}).toThrow("Warning: Failed prop type");
+		
 	});
 
 	it('with 10 data items, renders a Bar for each of the 10 data items', () => {
@@ -53,7 +59,6 @@ describe('Bars component', () => {
 			{label:'Angular.js', value:45},
 		];
 
-		// no Props
 		const wrapper = mount(
 			<Bars data={testData}/>
 		);
