@@ -1,6 +1,6 @@
 {
   "name": "react-bars",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "bars react component",
   "main": "./build/dist.bars.js",
   "dependencies": {
@@ -42,7 +42,8 @@
   ],
   "author": "Judd Niemann",
   "license": "MIT",
-  "repository" : { "type" : "git",
-    "url" : "https://github.com/jniemann66/react-bars"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jniemann66/react-bars"
   }
 }
