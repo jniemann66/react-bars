@@ -19,8 +19,6 @@ There are two components, in a simple Heirarchy:
 
 Each **Bar** inherits properties from the parent **Bars** component, but properties can be overridden for each individual Bar component as required.
 
-(for example, in the screenshot and sample code below, the 'HTML' bar is colored red)
-
 Please refer to the API documentation for details:
 
 **API documentation: [./api.md](./api.md)**
