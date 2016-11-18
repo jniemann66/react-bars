@@ -65,6 +65,8 @@ Bars.propTypes = {
 	barColor: React.PropTypes.string,
 	/** height of Bars, in pixels */
 	barHeight: React.PropTypes.number,
+	/** array of objects representing the props for each individual Bar */
+	data: React.PropTypes.array.isRequired,
 	/** text displayed inside Bars */
 	label: React.PropTypes.string,
 	/** if true, transform text inside Bars to uppercase */
