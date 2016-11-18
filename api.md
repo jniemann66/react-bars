@@ -26,6 +26,13 @@ type: `number`
 defaultValue: `42`
 
 
+### `data` (required)
+
+array of objects representing the props for each individual Bar
+
+type: `array`
+
+
 ### `label`
 
 text displayed inside Bars
