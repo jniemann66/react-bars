@@ -114,6 +114,9 @@ the classes are used as follows:
 
 **bar-expand:** the value part of the bar 
 
+_TIP: for a quick-and-dirty VERTICAL bargraph, add **transform: rotate(-90deg);** to the CSS for the enclosing div of a Bars component_
+
+
 ### build commands:
 
 dev: **npm run dev** - runs demo host app to facilitate development
