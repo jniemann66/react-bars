@@ -50,6 +50,7 @@ class Bars extends Component {
 						makeUppercase={item.makeUppercase || this.props.makeUppercase}
 						maxValue={item.maxValue || this.props.maxValue}
 						showValue={item.showValue || this.props.showValue}
+						suffix={item.suffix || this.props.suffix}
 						value={item.value || 0}
 						verticalSpacing={item.verticalSpacing || this.props.verticalSpacing}
 					/>
@@ -68,6 +69,7 @@ Bars.propTypes = {
 	makeUppercase: React.PropTypes.bool,
 	maxValue: React.PropTypes.number,
 	showValue: React.PropTypes.bool,
+	suffix: React.PropTypes.string,
 	value: React.PropTypes.number,
 	verticalSpacing: React.PropTypes.number,
 };
@@ -79,7 +81,8 @@ Bars.defaultProps = {
 	label: '',
 	makeUppercase: false,
 	maxValue: 100,
-	showValue: true,
+	showValue: false,
+	suffix: '',
 	value: 0,
 	verticalSpacing: 46,
 };

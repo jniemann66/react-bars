@@ -8,8 +8,19 @@
     left: 10px;
 }
 
+.bar-suffix {
+	display: inline-block;
+	  color: black;
+    font: 15px 'opensans-bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
 .bar-contain {
-    width: 100%;
+    width: 90%;
     padding: 0;
     display: inline-block; 
     border-radius: 3px;

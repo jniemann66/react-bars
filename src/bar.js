@@ -41,23 +41,29 @@ class Bar extends Component {
 	render() {
 	
 		return (
-		
-			<div className="bar-contain" style={{
-				height: this.props.barHeight + 'px',
-				marginBottom: this.props.verticalSpacing + 'px',
-				background: this.props.barBackgroundColor
-			}}>
-				<span className="bar-expand" style={{
-					width: 100 * this.props.value / this.props.maxValue + '%',
-					height: this.props.barHeight -2 + 'px',
-					background: this.props.barColor
+			<div>
+				<div className="bar-contain" style={{
+					height: this.props.barHeight + 'px',
+					marginBottom: this.props.verticalSpacing + 'px',
+					background: this.props.barBackgroundColor
 				}}>
-					<div className="bar-label"> 
-						{this.props.makeUppercase ? this.props.label.toUpperCase() : this.props.label}
-					</div>
-				</span>
-			</div>
+					<span className="bar-expand" style={{
+						width: 100 * this.props.value / this.props.maxValue + '%',
+						height: this.props.barHeight -2 + 'px',
+						background: this.props.barColor
+					}}>
+						<div className="bar-label"> 
+							{this.props.makeUppercase ? this.props.label.toUpperCase() : this.props.label}
+						</div>
+					</span>
+				</div>
 
+				<div className="bar-suffix">
+					{this.props.showValue ? this.props.value : ''}
+					{this.props.suffix}
+				</div>
+
+			</div>
 		);
 	}
 }
@@ -70,6 +76,7 @@ Bar.propTypes = {
 	makeUppercase: React.PropTypes.bool,
 	maxValue: React.PropTypes.number,
 	showValue: React.PropTypes.bool,
+	suffix: React.PropTypes.string,
 	value: React.PropTypes.number,
 	verticalSpacing: React.PropTypes.number,
 };
@@ -81,7 +88,8 @@ Bar.defaultProps = {
 	label: '',
 	makeUppercase: false,
 	maxValue: 100,
-	showValue: true,
+	showValue: false,
+	suffix: '',
 	value: 0,
 	verticalSpacing: 46,
 };
