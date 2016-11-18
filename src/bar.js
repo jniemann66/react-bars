@@ -31,15 +31,7 @@ import './bar.css';
 
 /** Bar : draws a bar as part of a bar graph */
 class Bar extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-		
-		};
-	}
-
 	render() {
-	
 		return (
 			<div>
 				<div className="bar-contain" style={{
