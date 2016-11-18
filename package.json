@@ -1,6 +1,6 @@
 {
   "name": "react-bars",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "bars react component",
   "main": "./build/dist.bars.js",
   "dependencies": {
