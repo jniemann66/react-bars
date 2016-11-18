@@ -46,12 +46,12 @@ class Bars extends Component {
 						barBackgroundColor={item.barBackgroundColor || this.props.barBackgroundColor}
 						barColor={item.barColor || this.props.barColor}
 						barHeight={item.barHeight || this.props.barHeight}
-						label={item.label || ''}
+						label={item.label || this.props.label}
 						makeUppercase={item.makeUppercase || this.props.makeUppercase}
 						maxValue={item.maxValue || this.props.maxValue}
 						showValue={item.showValue || this.props.showValue}
 						suffix={item.suffix || this.props.suffix}
-						value={item.value || 0}
+						value={item.value || this.props.value}
 						verticalSpacing={item.verticalSpacing || this.props.verticalSpacing}
 					/>
 				)}
