@@ -25,5 +25,6 @@ File | Description | Comments
  package.json | npm package config | npm configuration for project
  README.md | main README | main documentation for project
  screenshot.PNG | screenshot | screenshot of demo, showing the component
+ travis.yml | Travis config | provides instructions to the Travis CI service on how to build & test project 
  webpack.config.js | webpack dist config | configures webpack for the output of **build/dist.bars.js**
  webpack.dev.config.js | webpack dev config | configures webpack for the output of **build/dev.bars.js**
