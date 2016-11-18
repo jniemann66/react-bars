@@ -141,6 +141,8 @@ testing: **npm test**
 
 * [ ] hover colors etc
 
+* [ ] Auto-color for Labels (consider what happens when value is small ... can't have white-on-white !)
+
 ### Acknowledgements / credits:
 
 This project was inspired by the following works:
