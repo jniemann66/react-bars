@@ -4,7 +4,6 @@
 	width: 50%;
 }
 
-.rotate90 {
+.rotate90 { /* for quick-and-dirty vertical bargraph ! */ 
 	transform: rotate(-90deg);
-	width :60%;
 }
