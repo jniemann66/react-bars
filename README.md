@@ -144,9 +144,9 @@ testing: **npm test**
 
 This project was inspired by the following works:
 
-1. [ceevee template](http://www.styleshout.com/free-templates/ceevee/) by [Styleshout](http://www.styleshout.com/) 
+1. [ceevee template](http://www.styleshout.com/free-templates/ceevee/) (released under the Creative Commons Attribution 3.0 License) by [Styleshout](http://www.styleshout.com/) 
 
-(released under the Creative Commons Attribution 3.0 License)
+
 
 
 
