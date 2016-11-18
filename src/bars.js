@@ -47,7 +47,7 @@ class Bars extends Component {
 						barColor={item.barColor || this.props.barColor}
 						barHeight={item.barHeight || this.props.barHeight}
 						label={item.label || this.props.label}
-						makeUppercase={item.makeUppercase || this.props.makeUppercase}
+						makeUppercase={typeof item.makeUppercase !== 'undefined' ? item.makeUppercase : this.props.makeUppercase}
 						maxValue={item.maxValue || this.props.maxValue}
 						showValue={item.showValue || this.props.showValue}
 						suffix={item.suffix || this.props.suffix}

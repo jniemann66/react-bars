@@ -141,7 +141,7 @@ defaultValue: `100`
 
 ### `showValue`
 
-if true, show numerical value after Bar
+if true, show numerical value after Bar.
 
 type: `bool`
 defaultValue: `false`

@@ -79,7 +79,7 @@ Bar.propTypes = {
 	makeUppercase: React.PropTypes.bool,
 	/** maximum displayable value (defines scale) eg: use 100 for percentages, or 10 for score out of 10*/
 	maxValue: React.PropTypes.number,
-	/** if true, show numerical value after Bar */
+	/** if true, show numerical value after Bar. */
 	showValue: React.PropTypes.bool,
 	/** text to append after Bar's numerical value (if shown), or after Bar if numerical value not shown. Can be used to display units eg '%', 'dB', or '/10' */
 	suffix: React.PropTypes.string,
