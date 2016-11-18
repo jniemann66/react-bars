@@ -14,7 +14,7 @@ class App extends Component {
 				{label:'C++', value: 82},
 				{label:'React', value:80},
 				{label:'Node.js', value:75},
-				{label:'HTML5', value:72, barColor:'red'},
+				{label:'HTML5 -=I am RED! =-', value:72, barColor:'red'},
 				{label:'CSS', value:68},
 				{label:'JQuery', value:65},
 				{label:'Bootstrap', value:60},

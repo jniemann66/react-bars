@@ -71,13 +71,20 @@ class Bar extends Component {
 Bar.propTypes = {
 	barBackgroundColor: React.PropTypes.string,
 	barColor: React.PropTypes.string,
+	/** height of Bar, in pixels */
 	barHeight: React.PropTypes.number,
+	/** text displayed inside Bar */
 	label: React.PropTypes.string,
+	/** if true, transform text inside Bar to uppercase */
 	makeUppercase: React.PropTypes.bool,
+	/** maximum displayable value (defines scale) eg: use 100 for percentages, or 10 for score out of 10*/
 	maxValue: React.PropTypes.number,
+	/** if true, show numerical value after Bar */
 	showValue: React.PropTypes.bool,
+	/** text to append after Bar's numerical value (if shown), or after Bar if numerical value not shown. Can be used to display units eg '%', 'dB', or '/10' */
 	suffix: React.PropTypes.string,
 	value: React.PropTypes.number,
+	/** sets margin-bottom for Bar (in pixels), effectively controlling vertical spacing between bars */ 
 	verticalSpacing: React.PropTypes.number,
 };
 
