@@ -127,7 +127,7 @@ lint: **npm run lint** - runs ESLint
 
 generate API documentation: **npm run generate-docs**
 
-testing: **npm test**
+testing: **npm test** (testing is implemented with Jest, Enzyme, and Sinon)
 
 ### to-do: 
 
