@@ -5,18 +5,6 @@ var generateMarkdown = require('./generateMarkdown.js');
 var src = './src';
 var reactDocs = require('react-docgen');
 
-/* attempt to use alternative resolver (to accept multiple exported components)
-
-// find the react-docgen resolver module:
-var resolver = require(
-	path.join(
-		path.dirname(require.resolve('react-docgen')),
-		'resolver',
-		'findAllComponentDefinitions'
-		)
-).default;
-*/
-
 fs.readdir('./src', function (err, files) {
 	if (err) {
 		throw err;
@@ -43,6 +31,6 @@ fs.readdir('./src', function (err, files) {
 		} catch (err) {
 			console.log(err);
 		}
-		
+
 	});
 });
