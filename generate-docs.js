@@ -43,5 +43,6 @@ fs.readdir('./src', function (err, files) {
 		} catch (err) {
 			console.log(err);
 		}
+		
 	});
 });
