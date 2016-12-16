@@ -34,7 +34,6 @@ fs.readdir('./src', function (err, files) {
 
 	jsfiles.forEach(function (file, index) {
 
-		// Sync version (to preserve file ordering)
 		try {
 			var data = fs.readFileSync(path.join('./src/',file), 'utf8');
 			var componentInfo = reactDocs.parse(data /* , resolver */);
@@ -44,19 +43,5 @@ fs.readdir('./src', function (err, files) {
 		} catch (err) {
 			console.log(err);
 		}
-
-		/*
-		// async version
-		fs.readFile(path.join('./src/',file), 'utf8', function (err,data) {
-			if (err)
-				return;
-			var componentName = path.basename(file, path.extname(file));
-			var componentNameCapitalized = componentName[0].toUpperCase() + componentName.slice(1);
-			var componentInfo = reactDocs.parse(data);
-
-			console.log(generateMarkdown(componentNameCapitalized, componentInfo));
-		});
-		*/
-
 	});
 });
